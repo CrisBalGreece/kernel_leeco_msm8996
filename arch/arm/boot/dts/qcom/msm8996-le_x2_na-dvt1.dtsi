@@ -386,6 +386,7 @@
 };
 /*haptics end*/
 
+/* Expose battery data information for SMBCHG. */
 /{
  	le_batterydata: qcom,battery-data {
 		qcom,batt-id-range-pct = <15>;

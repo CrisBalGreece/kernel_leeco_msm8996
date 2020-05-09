@@ -405,18 +405,12 @@
 		nxp,p61-rst = <&tlmm 130 0>;
 	};
 };
-
-/* Expose battery data information for SMBCHG. */
 /{
-	le_batterydata: qcom,battery-data {	
+	mtp_batterydata: qcom,battery-data {
 		qcom,batt-id-range-pct = <15>;
 		#include "batterydata-zl1-pro-lishen-4000mAh.dtsi"
 		#include "batterydata-zl1-pro-scud-4000mAh.dtsi"
 	};
-};
-
-&pmi8994_charger {
-	qcom,battery-data = <&le_batterydata>;
 };
 
 &pmi8994_fg {

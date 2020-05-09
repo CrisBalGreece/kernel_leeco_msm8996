@@ -414,9 +414,7 @@
 };
 
 &pmi8994_fg {
-	qcom,battery-data = <&le_batterydata>;
 	qcom,thermal-coefficients = [C2 86 BB 50 CF 37];
-	qcom,ext-sense-type;
 };
 
 &pmi8994_haptics {
